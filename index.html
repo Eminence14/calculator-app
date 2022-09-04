@@ -4,40 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <h1>calc</h1>
+    <h1 class="whiteCol">calc</h1>
     <div class="right_side">
-      <h5>THEME</h5>
-      <div class="switcher">
-        <div class="current_theme"></div>
+      <h6 class="whiteCol">THEME</h6>
+      <div class="switcher toggleKeypadBg">
+        <div class="current_theme redKeyToggleBg"></div>
       </div>
     </div>
   </header>
-  <a href="javascript:window.open('http://127.0.0.1:5500/index.html', '', 'width=375px height=auto')">smallie</a>
+  <!-- <a href="javascript:window.open('http://127.0.0.1:5500/index.html', '', 'width=375px height=auto')">smallie</a> -->
   <div class="container">
-    <div class="display"></div>
-    <div class="frame grid">
-      <div class="buttons">0</div>
-      <div class="buttons">1</div>
-      <div class="buttons">2</div>
-      <div class="buttons">3</div>
-      <div class="buttons">4</div>
-      <div class="buttons">5</div>
-      <div class="buttons">6</div>
-      <div class="buttons">7</div>
-      <div class="buttons">8</div>
-      <div class="buttons">9</div>
-      <div class="buttons">.</div>
-      <div class="buttons">/</div>
-      <div class="buttons">x</div>
-      <div class="buttons">-</div>
-      <div class="buttons">+</div>
-      <div class="buttons">DEL</div>
-      <div class="buttons">RESET</div>
-      <div class="buttons">=</div>
+    <div class="display toggleKeypadBg">399,938</div>
+    <div class="frame toggleKeypadBg">
+      <div class="buttons grayKeyBg" id="zero">0</div>
+      <div class="buttons grayKeyBg" id="one">1</div>
+      <div class="buttons grayKeyBg" id="two">2</div>
+      <div class="buttons grayKeyBg" id="three">3</div>
+      <div class="buttons grayKeyBg" id="four">4</div>
+      <div class="buttons grayKeyBg" id="five">5</div>
+      <div class="buttons grayKeyBg" id="six">6</div>
+      <div class="buttons grayKeyBg" id="seven">7</div>
+      <div class="buttons grayKeyBg" id="eight">8</div>
+      <div class="buttons grayKeyBg" id="nine">9</div>
+      <div class="buttons grayKeyBg" id="dot">.</div>
+      <div class="buttons grayKeyBg" id="divide">/</div>
+      <div class="buttons grayKeyBg" id="times">x</div>
+      <div class="buttons grayKeyBg" id="minus">-</div>
+      <div class="buttons grayKeyBg" id="plus">+</div>
+      <div class="buttons keyBg" id="del">DEL</div>
+      <div class="buttons keyBg" id="reset">RESET</div>
+      <div class="buttons redKeyToggleBg" id="equal">=</div>
     </div>
   </div>
 
