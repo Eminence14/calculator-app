@@ -30,12 +30,17 @@ ul.theme_num {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 5px;
-    font-size: 16px;
+    padding-right: 8.5px;
+    padding-bottom: 2px;
 }
 .list_theme {
     color: white;
     margin-left: 20px;
+    font-size: 0.7em;
+}
+.list_theme:hover {
+    cursor: pointer;
+    color: var(--grayKeyBg);
 }
 .right_side {
     display: flex;
@@ -95,6 +100,7 @@ header {
     margin-bottom: 20px;
     color: white;
     line-height: 90px;
+    background-color: var(--screenBg);
 }
 .buttons {
     border-radius: 10px;
@@ -109,6 +115,9 @@ header {
     grid-template-columns: repeat(4, minmax(50px, 1fr));
     grid-gap: 14px 12px;
     grid-template-rows: repeat(5, minmax(60px, 1fr));
+}
+.opac:hover {
+    filter: brightness(150%)
 }
 #zero {
     grid-column: 2;
@@ -185,4 +194,12 @@ header {
     grid-row: 5;
     color: white;
     box-shadow: 0 4px 0px 0px var(--darkRedKeyShadow);
+}
+
+/* desktop styles */
+@media screen and (min-width: 700px) {
+    .overall {
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
