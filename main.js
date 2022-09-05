@@ -43,7 +43,7 @@ function operation() {
 }
 
 function res() {
-    location.reload()
+    display.textContent = null
 }
 
 function delet() {
