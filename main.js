@@ -36,6 +36,10 @@ theme1.addEventListener('click', themeSwitch1)
 theme2.addEventListener('click', themeSwitch2)
 theme3.addEventListener('click', themeSwitch3)
 
+function preferredTheme() {
+    
+}
+
 function displayNum(e) {
     let num = e.target.textContent
     display.textContent += num
@@ -91,7 +95,7 @@ function themeSwitch2(e) {
     document.documentElement.style.setProperty('--textGrayBlue', 'hsl(60, 10%, 19%)')
 }
 
-function themeSwitch3(e) {
+function themeSwitch3() {
     for (let key of change)
         key.style.color = 'hsl(52, 100%, 62%)'
     slider.style.justifyContent = 'flex-end'
